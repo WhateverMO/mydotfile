@@ -4,6 +4,7 @@ bash ~/.config/myUtils/swwwRandomWallpaper.sh &
 udiskie &
 fcitx5 &
 killall foot &
+sleep 1
 foot --server &
 sleep 1
 killall xdg-desktop-portal-hyprland
