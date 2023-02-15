@@ -18,6 +18,7 @@
 			"all-outputs": true,
 			"on-click": "activate",
 			"format": "{name}{icon}",
+			"sort-by-number" : true,
 			"format-icons": {
 					"1": "",
 					"2": "",
