@@ -1,6 +1,11 @@
 #! /bin/bash
 region(){
-	grim -l 0 ~/tempScreenShot.png && hyprctl dispatch exec "imv -f ~/tempScreenShot.png" && grim -g "$(slurp)" ~/nowScreenShot.png && kill -9 $(pgrep imv | tail -n 1) && swappy -f ~/nowScreenShot.png 
+	grim -l 0 ~/tempScreenShot.png && hyprctl dispatch exec "imv -f ~/tempScreenShot.png" && grim -g "$(slurp)" ~/nowScreenShot.png
+	if [[ $? == 1 ]]; then
+		kill -9 $(pgrep imv | tail -n 1)
+	else
+		kill -9 $(pgrep imv | tail -n 1) && swappy -f ~/nowScreenShot.png 
+	fi
 }
 
 all(){
