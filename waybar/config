@@ -12,7 +12,7 @@
     // Choose the order of the modules
     "modules-left": ["clock","wlr/workspaces"],
     "modules-center": ["hyprland/window"],
-    "modules-right": ["tray", "wireplumber", "network", "cpu", "memory", "backlight", "keyboard-state", "battery", "battery#bat2"],
+    "modules-right": ["tray", "pulseaudio", "network", "cpu", "memory", "backlight", "keyboard-state", "battery", "battery#bat2"],
     /* Modules configuration */
     "wlr/workspaces": {
 			"all-outputs": true,
@@ -141,42 +141,43 @@
     /*     "format-disconnected": "Disconnected ⚠", */
     /*     "format-alt": "{ifname}: {ipaddr}/{cidr}" */
     /* }, */
-    /* "wireplumber": { */
-    /*     // "scroll-step": 1, // %, can be a float */
-    /*     "format": "{volume}% {icon} {format_source}", */
-    /*     "format-bluetooth": "{volume}% {icon} {format_source}", */
-    /*     "format-bluetooth-muted": " {icon} {format_source}", */
-    /*     "format-muted": " {format_source}", */
-    /*     "format-source": "{volume}% ", */
-    /*     "format-source-muted": "", */
-    /*     "format-icons": { */
-    /*         "headphone": "", */
-    /*         "hands-free": "", */
-    /*         "headset": "", */
-    /*         "phone": "", */
-    /*         "portable": "", */
-    /*         "car": "", */
-    /*         "default": ["", "", ""] */
-    /*     }, */
-    /*     "on-click": "helvum" */
-    /* }, */
+    "pulseaudio": {
+        // "scroll-step": 1, // %, can be a float
+        "format": "{volume}% {icon} {format_source}",
+        "format-bluetooth": "{volume}% {icon} {format_source}",
+        "format-bluetooth-muted": " {icon} {format_source}",
+        "format-muted": " {format_source}",
+        "format-source": "{volume}% ",
+        "format-source-muted": "",
+        "format-icons": {
+            "headphone": "",
+            "hands-free": "",
+            "headset": "",
+            "phone": "",
+            "portable": "",
+            "car": "",
+            "default": ["", "", ""]
+        },
+				"on-click": "helvum",
+				"on-click-right": "easyeffects",
+    },
 /* 		"wireplumber": { */
 /*     "format": "{volume}% {icon}", */
 /*     "format-muted": "", */
 /*     "on-click": "helvum", */
 /*     "format-icons": ["", "", ""] */
 /* }, */
-"wireplumber": {
-    "format": "{volume}% ",
-		"format-bluetooth": "{volume}%  {format_source}",
-		"format-bluetooth-muted": "  {format_source}",
-		"format-muted": " {format_source}",
-		"format-source": "{volume}% ",
-		"format-source-muted": "",
-    "format-muted": "",
-    "on-click": "helvum",
-		"on-click-right": "easyeffects",
-},
+/* "wireplumber": { */
+/*     "format": "{volume}% ", */
+/* 		"format-bluetooth": "{volume}%  {format_source}", */
+/* 		"format-bluetooth-muted": "  {format_source}", */
+/* 		"format-muted": " {format_source}", */
+/* 		"format-source": "{volume}% ", */
+/* 		"format-source-muted": "", */
+/*     "format-muted": "", */
+/*     "on-click": "helvum", */
+/* 		"on-click-right": "easyeffects", */
+/* }, */
     /* "custom/media": { */
     /*     "format": "{icon} {}", */
     /*     "return-type": "json", */
