@@ -40,9 +40,8 @@
         "spacing": 10
     },
 		"network": {
-        "format-wifi": "直 {signalStrength}%",
+        "format-wifi": " {signalStrength}%",
         "format-ethernet": " wired",
-        "format-disconnected": "睊",
         "on-click": "bash ~/.config/waybar/scripts/rofi-wifi-menu.sh",
         "format-disconnected": "Disconnected  ",
         "tooltip-format": "{essid}:{ifname}:{gwaddr} {ipaddr}/{cidr}",
