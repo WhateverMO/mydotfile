@@ -41,11 +41,11 @@
     },
 		"network": {
         "format-wifi": " {signalStrength}%",
-        "format-ethernet": " wired",
+        "format-ethernet": "󰈀 wired",
         "on-click": "bash ~/.config/waybar/scripts/rofi-wifi-menu.sh",
-        "format-disconnected": "Disconnected  ",
-        "tooltip-format": "{essid}:{ifname}:{gwaddr} {ipaddr}/{cidr}",
-        "format-linked": "{ifname} (No IP) ",
+        "format-disconnected": "Disconnected  ",
+        "tooltip-format": "{essid}:{ifname}:{gwaddr} {ipaddr}/{cidr}",
+        "format-linked": "{ifname} (No IP) ",
     },
     "keyboard-state": {
         "numlock": true,
@@ -121,7 +121,7 @@
             "critical": 15
         },
         "format": "{capacity}% {icon}",
-        "format-charging": "{capacity}% ",
+        "format-charging": "{capacity}% 󰂄",
         "format-plugged": "{capacity}% ",
         "format-alt": "{time} {icon}",
         // "format-good": "", // An empty format will hide the module
@@ -144,8 +144,8 @@
         // "scroll-step": 1, // %, can be a float
         "format": "{volume}% {icon} {format_source}",
         "format-bluetooth": "{volume}% {icon} {format_source}",
-        "format-bluetooth-muted": " {icon} {format_source}",
-        "format-muted": " {format_source}",
+        "format-bluetooth-muted": "󰝟 {icon} {format_source}",
+        "format-muted": "󰝟 {format_source}",
         "format-source": "{volume}% ",
         "format-source-muted": "",
         "format-icons": {
