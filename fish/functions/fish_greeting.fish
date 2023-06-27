@@ -3,6 +3,8 @@ function fish_greeting -d "Greeting message on shell session start up"
     echo ""
     if neofetch | grep -q kitty
         neofetch --kitty ~/Pictures/myPictures/neofetch.png
+    if neofetch | grep -q foot
+				neofetch --ascii "$(ascii-image-converter neofetch.png -b -W 60 --threshold 220)"
     else
         neofetch
     end
