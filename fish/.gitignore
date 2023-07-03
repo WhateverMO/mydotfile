@@ -1,3 +1,4 @@
 fish_variables
 functions/_*
 functions/tide/
+rm fishd.tmp.*
