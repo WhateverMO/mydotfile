@@ -13,4 +13,5 @@ killall xdg-desktop-portal
 /usr/lib/xdg-desktop-portal-hyprland &
 sleep 2
 /usr/lib/xdg-desktop-portal &
-
+/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
+clash-verge &
