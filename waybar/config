@@ -30,6 +30,10 @@
 					"default": ""
 			}
      },
+	"hyprland/window":{
+		"format":"{class}    {title}",
+		"separate-outputs": true,
+	},
 		"clock": {
         "format": "<span color='#bf616a'> </span>{:%H:%M %p}",
         "format-alt": "<span color='#bf616a'>  </span>{:%A,%b %d,%I:%M %p}",
