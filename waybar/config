@@ -10,11 +10,11 @@
     "margin-left": 0,
     "margin-right": 0,
     // Choose the order of the modules
-    "modules-left": ["clock","wlr/workspaces"],
+    "modules-left": ["clock","hyprland/workspaces"],
     "modules-center": ["hyprland/window"],
     "modules-right": ["tray", "pulseaudio", "network", "cpu", "memory", "backlight", "keyboard-state", "battery", "battery#bat2"],
     /* Modules configuration */
-    "wlr/workspaces": {
+    "hyprland/workspaces": {
 			"all-outputs": true,
 			"on-click": "activate",
 			"format": "{name}{icon}",
