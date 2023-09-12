@@ -10,10 +10,14 @@
     "margin-left": 0,
     "margin-right": 0,
     // Choose the order of the modules
-    "modules-left": ["clock","hyprland/workspaces"],
+    "modules-left": ["custom/launcher","clock","hyprland/workspaces"],
     "modules-center": ["hyprland/window"],
     "modules-right": ["tray", "pulseaudio", "network", "cpu", "memory", "backlight", "keyboard-state", "battery", "battery#bat2"],
     /* Modules configuration */
+    "custom/launcher":{
+    	"format": "   ",
+	"on-click": "killall wofi || wofi --show drun",
+    },
     "hyprland/workspaces": {
 			"all-outputs": true,
 			"on-click": "activate",
@@ -161,8 +165,8 @@
             "car": "",
             "default": ["", "", ""]
         },
-				"on-click": "helvum",
-				"on-click-right": "easyeffects",
+		"on-click": "pavucontrol",
+		"on-click-right": "easyeffects && helvum",
     },
 /* 		"wireplumber": { */
 /*     "format": "{volume}% {icon}", */

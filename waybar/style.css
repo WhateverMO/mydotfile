@@ -72,6 +72,11 @@ button:hover {
     border-bottom: 3px solid #ffffff;
 }
 
+#custom-launcher{
+    background-color: #ffffff;
+    color: #2980b9;
+}
+
 #clock,
 #battery,
 #cpu,

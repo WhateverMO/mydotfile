@@ -15,3 +15,5 @@ sleep 2
 /usr/lib/xdg-desktop-portal &
 /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
 #clash-verge &
+wl-paste --type text --watch cliphist store &
+wl-paste --type image --watch cliphist store &
