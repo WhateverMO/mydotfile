@@ -6,6 +6,7 @@ fcitx5 &
 killall foot &
 sleep 1
 foot --server &
+dunst &
 sleep 1
 killall xdg-desktop-portal-hyprland
 killall xdg-desktop-portal-wlr
