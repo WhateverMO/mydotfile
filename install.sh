@@ -9,4 +9,4 @@ ln -s "$(pwd)/kitty" ~/.config/kitty
 ln -s "$(pwd)/myUtils" ~/.config/myUtils
 ln -s "$(pwd)/neofetch" ~/.config/neofetch
 ln -s "$(pwd)/waybar" ~/.config/waybar
-
+ln -s "$(pwd)/wayvnc" ~/.config/wayvnc
