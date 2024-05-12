@@ -9,3 +9,6 @@
 export PATH="$PATH:/home/zjj/.local/share/JetBrains/Toolbox/scripts"
 
 export PATH="$PATH:/home/zjj/.local/bin"
+if [[ -z $DISPLAY ]] && [[ $(tty) = /dev/tty1 ]]; then
+	exec Hyprland
+fi
