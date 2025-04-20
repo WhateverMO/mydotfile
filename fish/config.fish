@@ -4,3 +4,5 @@ end
 
 pyenv init - | source
 
+
+thefuck --alias | source

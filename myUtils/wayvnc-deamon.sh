@@ -5,7 +5,7 @@ while true
 do
     if ! pgrep -x "wayvnc" > /dev/null
     then
-        wayvnc -ro DP-1 0.0.0.0 5900
+        wayvnc -ro eDP-1 0.0.0.0 5900
     fi
     sleep 5
 done
