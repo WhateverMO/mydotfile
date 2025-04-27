@@ -125,9 +125,13 @@ format = " @[$localipv4](bold magenta)"
 disabled = false
 
 [shell]
-fish_indicator = '󰈺 '
-powershell_indicator = '_'
-unknown_indicator = 'mystery shell'
+bash_indicator = " "
+fish_indicator = ' '
+zsh_indicator = " "
+ion_indicator = " "
+cmd_indicator = " "
+powershell_indicator = ' '
+unknown_indicator = ' >_'
 style = 'cyan bold'
 disabled = false
 
