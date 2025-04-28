@@ -5,7 +5,7 @@ udiskie &
 fcitx5 &
 killall foot &
 sleep 1
-foot --server &
+# foot --server &
 dunst &
 sleep 1
 killall xdg-desktop-portal-hyprland

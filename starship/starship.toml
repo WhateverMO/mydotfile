@@ -1,5 +1,5 @@
 add_newline = true
-continuation_prompt = "[▸▹ ](dimmed white)"
+continuation_prompt = "[▸▹ ](dimmed blue)"
 
 format = """(\
 $nix_shell\
@@ -97,13 +97,13 @@ symbol = ''
 [nix_shell]
 symbol = " "
 style = 'bold dimmed blue'
-format = '[$symbol nix⎪$state⎪]($style) [$name](dimmed white)'
+format = '[$symbol nix⎪$state⎪]($style) [$name](dimmed blue)'
 impure_msg = '[⌽](bold dimmed red)'
 pure_msg = '[⌾](bold dimmed green)'
 unknown_msg = '[◌](bold dimmed ellow)'
 
 [os]
-style = "fg:#FFFFFF"
+style = "fg:blue"
 # disabled = true      # Disabled by default
 disabled = false # Disabled by default
 
@@ -187,13 +187,13 @@ style = "bold bright-blue"
 format = '[\($state( $progress_current of $progress_total)$ahead_behind$staged$modified$untracked$renamed$deleted$conflicted$stashed\)]($style) '
 # format = '[\($state( $progress_current of $progress_total)\)]($style) '
 conflicted = "[◪◦](bright-magenta)"
-ahead = "[▴│[${count}](bold white)│](green)"
-behind = "[▿│[${count}](bold white)│](red)"
-diverged = "[◇ ▴┤[${ahead_count}](regular white)│▿┤[${behind_count}](regular white)│](bright-magenta)"
+ahead = "[▴│[${count}](bold blue)│](green)"
+behind = "[▿│[${count}](bold blue)│](red)"
+diverged = "[◇ ▴┤[${ahead_count}](regular blue)│▿┤[${behind_count}](regular white)│](bright-magenta)"
 untracked = "[◌◦](bright-yellow)"
-stashed = "[◃◈](white)"
+stashed = "[◃◈](blue)"
 modified = "[●◦](yellow)"
-staged = "[▪┤[$count](bold white)│](bright-cyan)"
+staged = "[▪┤[$count](bold blue)│](bright-cyan)"
 renamed = "[◎◦](bright-blue)"
 deleted = "[✕](red)"
 
@@ -239,20 +239,20 @@ disabled = false
 format = "[$time]($style)"
 time_format = "%D %r"
 utc_time_offset = "local"
-style = "dimmed white"
+style = "dimmed blue"
 
 
 [cmd_duration]
-format = "[◄ $duration ](white)"
+format = "[◄ $duration ](blue)"
 
 [env_var.VIMSHELL]
 format = "[$env_value]($style)"
 style = 'green'
 
 [jobs]
-format = "[$symbol$number]($style) "
-style = "white"
-symbol = "[▶](blue)"
+format = "[$symbol:$number]($style) "
+style = "bold blue"
+symbol = "[ bg](bold red)"
 
 [sudo]
 format = "[$symbol]($style)"

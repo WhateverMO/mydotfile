@@ -1,10 +1,11 @@
 function fish_greeting -d "Greeting message on shell session start up"
     echo "Welcome! this is $(whoami)'s $(hostname)"
     echo ""
-    if neofetch | grep -q kitty
+    if echo $TERM | grep -qE 'kitty|ghostty'
+        # neofetch --backend kitty --source ~/Pictures/myPictures/neofetch.png
         neofetch --kitty ~/Pictures/myPictures/neofetch.png
     else
-        if neofetch | grep -q foot
+        if echo $TERM | grep -qE foot #|
             neofetch --ascii "$(ascii-image-converter ~/Pictures/myPictures/neofetch.png -b -W 60 --threshold 215)"
         else
             neofetch
