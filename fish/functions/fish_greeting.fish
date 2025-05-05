@@ -3,12 +3,14 @@ function fish_greeting -d "Greeting message on shell session start up"
     echo ""
     if echo $TERM | grep -qE 'kitty|ghostty'
         # neofetch --backend kitty --source ~/Pictures/myPictures/neofetch.png
-        neofetch --kitty ~/Pictures/myPictures/neofetch.png
+        # neofetch --kitty ~/Pictures/myPictures/neofetch.png
+        fastfetch --kitty ~/Pictures/myPictures/neofetch.png
     else
         if echo $TERM | grep -qE foot #|
-            neofetch --ascii "$(ascii-image-converter ~/Pictures/myPictures/neofetch.png -b -W 60 --threshold 215)"
+            # neofetch --ascii "$(ascii-image-converter ~/Pictures/myPictures/neofetch.png -b -W 60 --threshold 215)"
+            fastfetch --kitty ~/Pictures/myPictures/neofetch.png
         else
-            neofetch
+            fastfetch
         end
     end
 end
