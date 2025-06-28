@@ -22,7 +22,6 @@
 font-family = FiraCode Nerd Font
 font-size = 14
 theme = light:catppuccin-latte,dark:catppuccin-mocha
-command = /usr/bin/fish
 gtk-single-instance=true
 # window-padding-x = 2
 #
