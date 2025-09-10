@@ -3,3 +3,6 @@ if status is-interactive
 end
 
 starship init fish | source
+
+# uv
+fish_add_path "/home/zjj/.local/bin"
