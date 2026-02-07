@@ -27,3 +27,12 @@ fish_add_path "/Users/zjj/.local/bin"
 source ~/.orbstack/shell/init2.fish 2>/dev/null || :
 
 direnv hook fish | source
+
+# EDITOR environment variable with nvim fallback
+if command -q nvim
+    set -gx EDITOR (which nvim)
+else if command -q vim
+    set -gx EDITOR (which vim)
+else
+    set -gx EDITOR vi
+end
