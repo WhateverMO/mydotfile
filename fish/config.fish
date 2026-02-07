@@ -30,9 +30,9 @@ direnv hook fish | source
 
 # EDITOR environment variable with nvim fallback
 if command -q nvim
-    set -gx EDITOR (which nvim)
+    set -gx EDITOR nvim .
 else if command -q vim
-    set -gx EDITOR (which vim)
+    set -gx EDITOR vim
 else
     set -gx EDITOR vi
 end
