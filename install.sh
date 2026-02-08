@@ -13,3 +13,4 @@
 [ ! -e ~/.config/waybar ] && ln -sf "$(pwd)/waybar" ~/.config/waybar
 [ ! -e ~/.config/wayvnc ] && ln -sf "$(pwd)/wayvnc" ~/.config/wayvnc
 [ ! -e ~/.config/starship.toml ] && ln -sf "$(pwd)/starship/starship.toml" ~/.config/starship.toml
+[ ! -e ~/.config/opencode ] && ln -sf "$(pwd)/opencode" ~/.config/opencode

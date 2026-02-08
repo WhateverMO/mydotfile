@@ -5,3 +5,4 @@
 [ ! -e ~/.config/ghostty ] && ln -sf "$(pwd)/ghostty" ~/.config/ghostty
 [ ! -e ~/.config/bottom ] && ln -sf "$(pwd)/bottom" ~/.config/bottom
 [ ! -e ~/.config/starship.toml ] && ln -sf "$(pwd)/starship/starship.toml" ~/.config/starship.toml
+[ ! -e ~/.config/opencode ] && ln -sf "$(pwd)/opencode" ~/.config/opencode

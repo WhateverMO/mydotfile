@@ -1,0 +1,46 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  
+  // 主题配置 - 使用 Catppuccin 主题
+  // 内置的 catppuccin 主题会根据终端模式自动切换：
+  // - 深色模式使用 Mocha (最深的变体)
+  // - 浅色模式使用 Latte (浅色变体)
+  "theme": "catppuccin",
+  
+  // 以下是可选的设置，保持注释状态供参考
+  // 如需启用，请取消注释并根据需要调整
+  
+  // // AI 模型配置
+  // "model": "anthropic/claude-sonnet-4-5",
+  // 
+  // // 小模型配置（用于轻量级任务）
+  // "small_model": "anthropic/claude-haiku-4-5",
+  // 
+  // // 自动更新
+  // "autoupdate": true,
+  // 
+  // // 工具配置
+  // "tools": {
+  //   "write": true,
+  //   "edit": true,
+  //   "bash": true
+  // },
+  // 
+  // // 权限配置
+  // "permission": {},
+  // 
+  // TUI 设置
+  "tui": {
+    "scroll_speed": 3,
+    "scroll_acceleration": {
+      "enabled": true
+    },
+    "diff_style": "auto"
+  },
+  
+  // 键位绑定
+  "keybinds": {
+    "scrollbar_toggle": "ctrl+s",
+    "status_view": "ctrl+i"
+  }
+}

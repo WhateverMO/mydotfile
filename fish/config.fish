@@ -36,3 +36,7 @@ else if command -q vim
 else
     set -gx EDITOR vi
 end
+
+# bun
+set --export BUN_INSTALL "$HOME/.bun"
+set --export PATH $BUN_INSTALL/bin $PATH
