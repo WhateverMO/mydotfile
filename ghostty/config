@@ -21,8 +21,9 @@
 # # separated by equals signs.
 font-family = FiraCode Nerd Font
 font-size = 14
-theme = light:catppuccin-latte,dark:catppuccin-mocha
+theme = light:catppuccin latte,dark:catppuccin mocha
 gtk-single-instance=true
+shell-integration-features = ssh-terminfo,ssh-env
 # window-padding-x = 2
 #
 # # Spacing around the equals sign does not matter.

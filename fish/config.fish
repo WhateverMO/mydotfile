@@ -18,6 +18,7 @@ if status is-interactive
 end
 
 starship init fish | source
+# enable_transience
 
 # uv
 fish_add_path "/Users/zjj/.local/bin"
