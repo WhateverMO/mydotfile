@@ -5,6 +5,7 @@ palette = "catppuccin_latte"
 format = """(\
 $nix_shell\
 $container\
+$cmd_duration\
 \n)\
 (\
 $os\
@@ -84,7 +85,6 @@ $status\
 $battery\
 $time\
 \n)\
-$cmd_duration\
 $vcsh\
 $env_var\
 $jobs\
